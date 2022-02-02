@@ -1,0 +1,258 @@
+{
+	"id": "d704be34-9f7a-e8a6-d393-47f532e60671",
+	"name": "ShopRu",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Order",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"order": [
+				"8478e4bc-e72b-8562-5790-26130471d5bc",
+				"ec34d45e-7f45-b8d6-9ae8-a399ceb87d28",
+				"acdb002f-2ecc-37af-893a-c8292ba48bd9",
+				"d48b5593-0c84-5275-6ae6-1fa14205263c"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "81a093e4-3ed5-1ad8-54b6-a0480c583d8b"
+		},
+		{
+			"name": "User",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"order": [
+				"97043f93-3d3f-8b58-466d-45a83ef22c44",
+				"e042d251-383b-1a39-af35-2cad6a85f940",
+				"0e423bf2-cb9a-5c4d-b15b-3c85bfb29504"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "a5358e63-8710-9aa4-151f-f847c3943b8f"
+		}
+	],
+	"folders_order": [
+		"a5358e63-8710-9aa4-151f-f847c3943b8f",
+		"81a093e4-3ed5-1ad8-54b6-a0480c583d8b"
+	],
+	"timestamp": 1643631333888,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0e423bf2-cb9a-5c4d-b15b-3c85bfb29504",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/user/create",
+			"folder": "a5358e63-8710-9aa4-151f-f847c3943b8f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643710710149,
+			"name": "CreateAffiliate",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"responses": [],
+			"rawModeData": "{\r\n  \"firstName\": \"Affiliate\",\r\n  \"lastName\": \"User\",\r\n  \"userName\": \"affiliate\",\r\n  \"password\": \"123456\",\r\n  \"role\": 3\r\n}"
+		},
+		{
+			"id": "8478e4bc-e72b-8562-5790-26130471d5bc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/order",
+			"folder": "81a093e4-3ed5-1ad8-54b6-a0480c583d8b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643793285261,
+			"name": "List",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"responses": [],
+			"rawModeData": "{\r\n  \"userId\": 1,\r\n  \"orderType\": 2,\r\n  \"items\": [\r\n  \t{\"productName\": \"Book\", \"productPrice\": 100},\r\n  \t{\"productName\": \"Laptop\", \"productPrice\": 200}\r\n  ]\r\n}"
+		},
+		{
+			"id": "97043f93-3d3f-8b58-466d-45a83ef22c44",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/user/",
+			"folder": "a5358e63-8710-9aa4-151f-f847c3943b8f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643793382483,
+			"name": "List",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"responses": [],
+			"rawModeData": "{\r\n  \"firstName\": \"Employee\",\r\n  \"lastName\": \"User\",\r\n  \"userName\": \"employee\",\r\n  \"password\": \"123456\",\r\n  \"role\": 2\r\n}"
+		},
+		{
+			"id": "acdb002f-2ecc-37af-893a-c8292ba48bd9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/order/add-order-item",
+			"folder": "81a093e4-3ed5-1ad8-54b6-a0480c583d8b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643792641453,
+			"name": "AddItem",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"responses": [],
+			"rawModeData": "{\r\n  \"orderId\": 2,\r\n  \"productName\": \"Laptop\",\r\n  \"productPrice\": 1500\r\n}"
+		},
+		{
+			"id": "d48b5593-0c84-5275-6ae6-1fa14205263c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/order/1",
+			"folder": "81a093e4-3ed5-1ad8-54b6-a0480c583d8b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643710929076,
+			"name": "Get",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"responses": [],
+			"rawModeData": "{\r\n  \"firstName\": \"Harun\",\r\n  \"lastName\": \"Marangoz\",\r\n  \"userName\": \"harun-marangoz\",\r\n  \"password\": \"123456\",\r\n  \"role\": 1\r\n}"
+		},
+		{
+			"id": "e042d251-383b-1a39-af35-2cad6a85f940",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/user/create",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643710698830,
+			"name": "CreateEmployee",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"responses": [],
+			"rawModeData": "{\r\n  \"firstName\": \"Employee\",\r\n  \"lastName\": \"User\",\r\n  \"userName\": \"employee\",\r\n  \"password\": \"123456\",\r\n  \"role\": 2\r\n}"
+		},
+		{
+			"id": "ec34d45e-7f45-b8d6-9ae8-a399ceb87d28",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:5001/api/order/create",
+			"folder": "81a093e4-3ed5-1ad8-54b6-a0480c583d8b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643792639700,
+			"name": "Create",
+			"description": "",
+			"collectionId": "d704be34-9f7a-e8a6-d393-47f532e60671",
+			"responses": [],
+			"rawModeData": "{\r\n  \"userId\": 1,\r\n  \"orderType\": 2,\r\n  \"items\": [\r\n  \t{\"productName\": \"Book\", \"productPrice\": 100},\r\n  \t{\"productName\": \"Laptop\", \"productPrice\": 200}\r\n  ]\r\n}"
+		}
+	]
+}
